@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House_Price_Prediction</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <form method="POST">
+        <p>enter the house area in square feet</p>
+        <input type ='text' placeholder='area' name='area'>
+        <input type ='text' placeholder='floors' name='floor'>
+        <button type = 'submit'>predict</button>
+    </form>
+    <br>
+    <br>
+{{prediction_text}}
+</body>
+</html>
